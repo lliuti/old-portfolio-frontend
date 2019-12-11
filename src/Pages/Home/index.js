@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from '../../Components/Projects/index';
+import Nav from '../../Components/Nav/index';
 import './style.css';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     </header>
     <div className="container">
       <Projects/>
+      <Nav/>
     </div>
     </>
   );

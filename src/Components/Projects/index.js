@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import './style.css';
 
 export default function Projects() {
   return (
