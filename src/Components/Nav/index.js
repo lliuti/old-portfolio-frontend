@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignRight, faLaptopCode, faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
-import './style.css';
+import { Navbar } from './styles';
 
-export default function Nav() {
-  return (
-    <div className="nav">
-      <ul>
-        <li><FontAwesomeIcon icon={faAlignRight}/></li>
-        <li><FontAwesomeIcon icon={faLaptopCode}/></li>
-        <li><FontAwesomeIcon icon={faAddressBook}/></li>
-      </ul>
-    </div>
-  );
+export default class Nav extends Component {
+  state = {
+
+  };
+
+  render() {
+    return (
+      <Navbar>
+          <unorderedList>
+            <listItem>
+              <Link to="/">
+                <FontAwesomeIcon icon={faAlignRight}/>
+              </Link>
+            </listItem>
+            <listItem>
+              <Link to="/projects">
+                <FontAwesomeIcon icon={faLaptopCode}/>  
+              </Link>
+            </listItem>
+            <listItem>
+              <Link to="/contact">
+                <FontAwesomeIcon icon={faAddressBook}/>
+              </Link>
+            </listItem>
+          </unorderedList>
+      </Navbar>
+    );
+  }
 }
