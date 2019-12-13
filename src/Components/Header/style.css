@@ -1,0 +1,21 @@
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 1px 10px rgba(0, 0, 0, 0.233);
+  cursor: default;
+  height: 80px;
+}
+
+header h1 {
+  text-shadow: 2px 4px 1px #c8d9f8;
+  font-size: 62px;
+}
+
+header h1::-moz-selection {
+  background-color: #8a97e0;
+}
+header h1::selection {
+  background-color: #8a97e0;
+}
