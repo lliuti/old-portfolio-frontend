@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import Home from './Pages/Home/index';
+import Routes from './routes';
+import Header from './Components/Header/index';
+import Nav from './Components/Nav/index';
 
 function App() {
   return (
-    <Home/>
+    <Routes/>
   );
 }
 
