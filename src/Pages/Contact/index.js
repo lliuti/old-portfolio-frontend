@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Nav from '../../Components/Nav/index';
-import Header from '../../Components/Header/index';
 import  './style.css';
 
 export default function Contact({ history }) {
@@ -18,7 +17,6 @@ export default function Contact({ history }) {
 
   return (
     <>
-      <Header/>
       <Nav/>
       <div className="contact">
         <div className="centered-box">

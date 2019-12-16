@@ -1,12 +1,10 @@
 import React from 'react';
 import Nav from '../../Components/Nav/index';
-import Header from '../../Components/Header/index';
 import './style.css';
 
 export default function Projects() {
   return (
     <>
-      <Header/>
       <Nav/>
       <div className="projects">
         <div className="title-box">
