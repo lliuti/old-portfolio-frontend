@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Quicksand&display=swap');
 /* 
+text
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Quicksand', sans-serif; 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Ubuntu&display=swap');
+/* 
+titles
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+
 * {
   outline: 0;
   margin: 0;
@@ -15,7 +24,7 @@ body, html {
 }
 
 body {
-  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #333;
   background-color: rgb(240, 240, 240);
 }
