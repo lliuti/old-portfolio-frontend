@@ -1,12 +1,26 @@
 import React from 'react';
 
 import Nav from '../../Components/Nav/index';
-import { TitleWrapper, Title, SomeThings, SubTitle, Text, TextDescription, UnderlinedText, Knowledge } from './styles';
+import {
+  TitleWrapper,
+  Title,
+  SomeThings,
+  SubTitle,
+  Text,
+  JavascriptDisclaimer,
+  UnderlinedNode,
+  UnderlinedReact,
+  UnderlinedRN,
+  TextDescription,
+  UnderlinedText,
+  Knowledge
+} from './styles';
 
 export default function About() {
+  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   return (
     <>
-      <Nav/>
+      <Nav />
       <TitleWrapper>
         <Title>
           lucas liuti
@@ -29,21 +43,24 @@ export default function About() {
           Who may know everything
         </TextDescription>
         <Text>
-          I'm just someone who loves technology and coding.
+          I'm someone who really loves technology and coding.
         </Text>
         <TextDescription>
-          I know that I have a lot to learn, which motivates me.
+          I know that I still have a lot to learn, which motivates me.
         </TextDescription>
       </SomeThings>
       <Knowledge>
         <SubTitle>
-          What do I do?
+          What do I work with?
         </SubTitle>
         <Text>
-          <UnderlinedText>JavaScript</UnderlinedText> is my main focus at the moment.
+          JavaScript is my main focus at the moment.
         </Text>
+        <JavascriptDisclaimer>
+          <UnderlinedNode>NodeJS</UnderlinedNode> | <UnderlinedReact>ReactJS</UnderlinedReact> | <UnderlinedRN>React Native</UnderlinedRN>
+        </JavascriptDisclaimer>
         <TextDescription>
-          I've been studying JavaScript for a while now and created some really cool projects with it.
+          I've been studying JavaScript for a while now and I have created some really cool projects with it.
         </TextDescription>
       </Knowledge>
     </>

@@ -1,49 +1,57 @@
 import React from 'react';
 import Nav from '../../Components/Nav/index';
-import './style.css';
+import {
+  ProjectsContainer,
+  ProjectBox,
+  TitleBox,
+  Title,
+  UnderlineEffect,
+  ProjectTitle,
+  ProjectDescription,
+  UnorderedList,
+  ListItem
+} from './styles';
 
 export default function Projects() {
   return (
     <>
-      <Nav/>
-      <div className="projects">
-        <div className="title-box">
-          <h1><span className="underline-effect">Projects</span> I developed</h1>
-        </div>
-        <div className="project-box">
-          <div className="project-description">
-            <h2>BossaBox</h2>
-            <p>An API to register and search dev tools</p>
-            <ul>
-              <li>NodeJS</li>
-              <li>PostgreSQL</li>
-              <li>Sequelize</li>
-              <li>JWT</li>
-              <li>BCryptJS</li>
-            </ul>
-          </div>
-        </div>
-        <div className="project-box">
-          <h2>NoteAPP</h2>
-          <p>An app to save your notes</p>
-          <ul>
-            <li>NodeJS</li>
-            <li>PostgreSQL</li>
-            <li>Sequelize</li>
-            <li>JWT</li>
-            <li>BCryptJS</li>
-          </ul>
-        </div>
-        <div className="project-box">
-          <h2>Talkyo</h2>
-          <p>A chatbot that you can interact</p>
-          <ul>
-            <li>NodeJS</li>
-            <li>Watson Assistant</li>
-            <li>Express</li>
-          </ul>
-        </div>
-      </div>
+      <Nav />
+      <ProjectsContainer>
+        <TitleBox>
+          <Title><UnderlineEffect>Projects</UnderlineEffect> I developed</Title>
+        </TitleBox>
+        <ProjectBox>
+          <ProjectTitle>BossaBox</ProjectTitle>
+          <ProjectDescription>An API to register and search dev tools</ProjectDescription>
+          <UnorderedList>
+            <ListItem>NodeJS</ListItem>
+            <ListItem>PostgreSQL</ListItem>
+            <ListItem>Sequelize</ListItem>
+            <ListItem>JWT</ListItem>
+            <ListItem>BCryptJS</ListItem>
+          </UnorderedList>
+        </ProjectBox>
+        <ProjectBox>
+          <ProjectTitle>NoteAPP</ProjectTitle>
+          <ProjectDescription>An app to save your notes</ProjectDescription>
+          <UnorderedList>
+            <ListItem>NodeJS</ListItem>
+            <ListItem>PostgreSQL</ListItem>
+            <ListItem>Sequelize</ListItem>
+            <ListItem>JWT</ListItem>
+            <ListItem>BCryptJS</ListItem>
+          </UnorderedList>
+        </ProjectBox>
+        <ProjectBox>
+          <ProjectTitle>Talkyo</ProjectTitle>
+          <ProjectDescription>A chatbot that you can interact</ProjectDescription>
+          <UnorderedList>
+            <ListItem>NodeJS</ListItem>
+            <ListItem>Watson Assistant</ListItem>
+            <ListItem>Express</ListItem>
+          </UnorderedList>
+        </ProjectBox>
+      </ProjectsContainer>
     </>
   );
 }

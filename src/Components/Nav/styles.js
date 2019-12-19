@@ -47,7 +47,7 @@ export const Navbar = styled.div`
       &:hover {
         svg {
           color: rgb(63, 63, 63);
-          animation: ${colorRainbow} 2s linear infinite;
+          animation: ${colorRainbow} 30s linear infinite;
         }
       }
 
